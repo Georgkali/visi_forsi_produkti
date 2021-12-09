@@ -48,18 +48,6 @@ class ProductController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Product $product
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Product $product)
-    {
-
-    }
-
-
     public function edit(Product $product)
     {
 
@@ -69,7 +57,6 @@ class ProductController extends Controller
          return view('edit_att', ['product' => $product]);
 
     }
-
 
     public function update(Request $request, Product $product)
     {

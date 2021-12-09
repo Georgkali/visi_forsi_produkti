@@ -27,29 +27,6 @@ class ProductAttributeController extends Controller
         return redirect('/products');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\ProductAttribute $productAttribute
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ProductAttribute $productAttribute)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\ProductAttribute $productAttribute
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ProductAttribute $productAttribute)
-    {
-        //
-    }
-
-
     public function update(Request $request, ProductAttribute $productAttribute)
     {
         $request->validate([

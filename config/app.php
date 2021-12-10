@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
         App\Providers\FortifyServiceProvider::class,
+        Georgkali\VfpPackage\VfpServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

@@ -31,6 +31,7 @@
                         </thead>
 
                         <tbody class="bg-white divide-y divide-gray-200">
+
                         @foreach($products as $product)
 
                             <tr>
@@ -64,9 +65,7 @@
                                                 . $product->productAttribute->value  : ''}}
                                         </p>
                                     </div>
-
                                 </td>
-
 
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <a href="{{route('products.edit', $product)}}"

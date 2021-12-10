@@ -5,21 +5,22 @@
 
 
     <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        @if ($errors->any())
-            <div class="alert alert-danger text-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+
         <div class="max-w-md w-full space-y-8">
             <div>
 
                 <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
                     Register
                 </h2>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li><p class="alert-info text-danger" style="color: red">{{ $error }}</p></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
             </div>
             <form class="mt-8 space-y-6" action="/register" method="POST">
